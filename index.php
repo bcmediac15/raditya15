@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="fontawesome/css/all.css" rel="stylesheet">
 
-    <title>BCMedia Landingpage </title>
+    <title>Info Sekolah SMPN.2 Kuta Selatan </title>
     <style>
         html {
             scroll-behavior: smooth;
@@ -134,7 +134,7 @@
                 <div class="container text-center">
                     <img src="img/profile-raditya.png" alt="profile" class="rouded-circle" width="10%">
                     <h2>Putu Gede Esa Rasya Raditya</h2>
-                    <p class="lead">SMP No 2 Unggasan</p>
+                    <p class="lead">SMP No 2 Kuta Selatan</p>
                 </div>
             </div>
         </section>
