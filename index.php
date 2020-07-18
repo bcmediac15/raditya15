@@ -118,7 +118,7 @@
                   <a class="nav-link" href="#InfoSekolah">InfoSekolah</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#portfolio">GClass</a>
+                  <a class="nav-link" href="#portfolio">Project</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
@@ -182,7 +182,7 @@
             <div class="container text-center">
                 <div class="row">
                     <div class="col">
-                        <h3>Daftar Google Class</h3>
+                        <h3>Daftar Project-Tugas</h3>
                     </div>
                 </div>
             </div>
@@ -190,49 +190,23 @@
                 <div class="row mb-3">
                     <div class="col-md">
                         <div class="card">
-                            <img class="card-img-top" src="img/thumbs/GC-agama.PNG" alt="Gambar 1">
-                            <div class="card-body">
-                              <p class="card-text"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="card">
-                            <img class="card-img-top" src="img/thumbs/GC-BahasaIndonesia.PNG" alt="Gambar 1">
-                            <div class="card-body">
-                              <p class="card-text"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="card">
-                            <img class="card-img-top" src="img/thumbs/GC-BHSBali.PNG" alt="Gambar 1">
-                            <div class="card-body">
-                              <p class="card-text"></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md">
-                        <div class="card">
-                            <img class="card-img-top" src="img/thumbs/GC-matematika.PNG" alt="Gambar 1">
-                            <div class="card-body">
-                              <p class="card-text"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="card">
-                            <img class="card-img-top" src="img/thumbs/GC-SeniBudaya.PNG" alt="Gambar 1">
-                            <div class="card-body">
-                              <p class="card-text"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="card">
                             <img class="card-img-top" src="img/thumbs/1.PNG" alt="Gambar 1">
+                            <div class="card-body">
+                              <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <img class="card-img-top" src="img/thumbs/2.PNG" alt="Gambar 1">
+                            <div class="card-body">
+                              <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <img class="card-img-top" src="img/thumbs/3.PNG" alt="Gambar 1">
                             <div class="card-body">
                               <p class="card-text"></p>
                             </div>
