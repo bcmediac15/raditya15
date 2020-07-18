@@ -190,7 +190,7 @@
                 <div class="row mb-3">
                     <div class="col-md">
                         <div class="card">
-                            <img class="card-img-top" src="img/thumbs/1.PNG" alt="Gambar 1">
+                            <img class="card-img-top" src="img/thumbs/1.png" alt="Gambar 1">
                             <div class="card-body">
                               <p class="card-text"></p>
                             </div>
@@ -198,7 +198,7 @@
                     </div>
                     <div class="col-md">
                         <div class="card">
-                            <img class="card-img-top" src="img/thumbs/2.PNG" alt="Gambar 1">
+                            <img class="card-img-top" src="img/thumbs/2.png" alt="Gambar 1">
                             <div class="card-body">
                               <p class="card-text"></p>
                             </div>
@@ -206,7 +206,7 @@
                     </div>
                     <div class="col-md">
                         <div class="card">
-                            <img class="card-img-top" src="img/thumbs/3.PNG" alt="Gambar 1">
+                            <img class="card-img-top" src="img/thumbs/3.png" alt="Gambar 1">
                             <div class="card-body">
                               <p class="card-text"></p>
                             </div>
