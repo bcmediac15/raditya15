@@ -501,7 +501,7 @@
                 <div class="row">
                     <div class="col bg-dark text-white text-center">
                         Link:<br>
-                        1. <a href='https://smpn2kutaselatan.sch.id/'>Sekolah</a>
+                        1. <a href='https://ptov.ga/BCMaxxe4'>Sekolah</a>
                         2. <a href='https://artha.web.id/'>Artha Blog</a>
                         <p>&copy;2020</p>
                     </div>
