@@ -6,6 +6,83 @@
     $esa = new feedblog();
     $feeds = $esa->ReadFeed();
     $feedother = $esa->ReadFeedOther();
+    $mulai1 = date("Y-m-d");
+    $mulai1 .= " 07:30:00";
+    $akhir1 = date("Y-m-d");
+    $akhir1 .= " 08:30:00";
+    $start1 = strtotime($mulai1);
+    $end1 = strtotime($akhir1);
+    
+    $mulai2 = date("Y-m-d");
+    $mulai2 .= " 10:30:00";
+    $akhir2 = date("Y-m-d");
+    $akhir2 .= " 11:30:00";
+    $start2 = strtotime($mulai2);
+    $end2 = strtotime($akhir2);
+
+    $sen = "";
+    $sel = "";
+    $rab = "";
+    $kam = "";
+    $jum = "";
+    $sab = "";
+    $sesi1sen = "";
+    $sesi2sen = "";
+    $day = date('D');
+    switch($day){
+        case "Mon":
+            $sen = " harini";
+            if(time() >= $start1 && time() <= $end1){
+                $sensesi1 = " jamaktif";
+            }
+            if(time() >= $start2 && time() <= $end2){
+                $sensesi2 = " jamaktif";
+            }
+        break;
+        case "Tue":
+            $sel = " harini";
+            if(time() >= $start1 && time() <= $end1){
+                $selsesi1 = " jamaktif";
+            }
+            if(time() >= $start2 && time() <= $end2){
+                $selsesi2 = " jamaktif";
+            }
+        break;
+        case "Wed":
+            $rab = " harini";
+            if(time() >= $start1 && time() <= $end1){
+                $rabsesi1 = " jamaktif";
+            }
+            if(time() >= $start2 && time() <= $end2){
+                $rabsesi2 = " jamaktif";
+            }
+        break;
+        case "Thu":
+            $kam = " harini";
+            if(time() >= $start1 && time() <= $end1){
+                $kamsesi1 = " jamaktif";
+            }
+            if(time() >= $start2 && time() <= $end2){
+                $kamsesi2 = " jamaktif";
+            }
+        break;
+        case "Fri":
+            $jum = " harini";
+            if(time() >= $start1 && time() <= $end1){
+                $jumsesi1 = " jamaktif";
+            }
+            if(time() >= $start2 && time() <= $end2){
+                $jumsesi2 = " jamaktif";
+            }
+        break;
+        case "Sat":
+            $sab = " harini";
+            if(time() >= $start1 && time() <= $end1){
+                $sabsesi1 = " jamaktif";
+            }
+        break;    
+    }
+    
 ?><!doctype html>
 <html lang="en">
   <head>
@@ -63,6 +140,17 @@
         }
         .cardfoot a:hover{
             text-decoration: none;
+            color: red;
+        }
+        .hari{
+            text-align: center !important;
+        }
+        .harini {
+            border-color: bisque;
+            background-color: antiquewhite;
+            font-weight: bold;
+        }
+        .jamaktif{
             color: red;
         }
         @media screen and (max-width: 600px) {
@@ -179,19 +267,19 @@
                 <div class="row mb-3">
 
                     <div class="col-md-4 cardrss">
-                            <div class="card">
+                            <div class="card harini">
                                 <div class="container text-center">
                                     <i class="fab fa-github-square"></i>
                                 </div>
                             
-                                <div class="cardTitle">
+                                <div class="cardTitle hari<?=$sen;?>">
                                     Senin
                                 </div>
                                 
                                 <div class="card-body">
                                     <p class="card-text">
-                                    07:30 - 08:30 Matematika<br>
-                                    10:30 - 11:30 Agama    
+                                    <span class="sesi1<?=$sensesi1;?>">07:30 - 08:30 Matematika</span><br>
+                                    <span class="sesi2<?=$sensesi2;?>">10:30 - 11:30 Agama</span>
                                     </p>
                                 </div>
                             </div>
@@ -201,14 +289,14 @@
                                 <div class="container text-center">
                                     <i class="fab fa-github-square"></i>
                                 </div>
-                                <div class="cardTitle">
+                                <div class="cardTitle hari<?=$sel;?>">
                                     Selasa
                                 </div>
                                 
                                 <div class="card-body">
                                     <p class="card-text">
-                                    07:30 - 08:30 IPA<br>
-                                    10:30 - 11:30 Bahasa Bali    
+                                    <span class="sesi1<?=$selsesi1;?>">07:30 - 08:30 IPA</span><br>
+                                    <span class="sesi2<?=$selsesi2;?>">10:30 - 11:30 Bahasa Bali</span>    
                                     </p>
                                 </div>
                             </div>
@@ -218,14 +306,14 @@
                                 <div class="container text-center">
                                     <i class="fab fa-github-square"></i>
                                 </div>
-                                <div class="cardTitle">
+                                <div class="cardTitle hari<?=$rab;?>">
                                     Rabu
                                 </div>
                                 
                                 <div class="card-body">
                                     <p class="card-text">
-                                    07:30 - 08:30 Bahasa Indonesia<br>
-                                    10:30 - 11:30 TIK    
+                                    <span class="sesi1<?=$rabsesi1;?>">07:30 - 08:30 Bahasa Indonesia</span><br>
+                                    <span class="sesi2<?=$rabsesi2;?>">10:30 - 11:30 TIK</span>  
                                     </p>
                                 </div>
                             </div>
@@ -237,14 +325,14 @@
                                     <i class="fab fa-github-square"></i>
                                 </div>
                             
-                                <div class="cardTitle">
+                                <div class="cardTitle hari<?=$kam;?>">
                                     Kamis
                                 </div>
                                 
                                 <div class="card-body">
                                     <p class="card-text">
-                                    07:30 - 08:30 Bahasa Inggris<br>
-                                    10:30 - 11:30 Seni Budaya    
+                                    <span class="sesi1<?=$kamsesi1;?>">07:30 - 08:30 Bahasa Inggris</span><br>
+                                    <span class="sesi2<?=$kamsesi2;?>">10:30 - 11:30 Seni Budaya</span>    
                                     </p>
                                 </div>
                             </div>
@@ -254,14 +342,14 @@
                                 <div class="container text-center">
                                     <i class="fab fa-github-square"></i>
                                 </div>
-                                <div class="cardTitle">
+                                <div class="cardTitle hari<?=$jum;?>">
                                     Jumat
                                 </div>
                                 
                                 <div class="card-body">
                                     <p class="card-text">
-                                    07:30 - 08:30 IPS<br>
-                                    10:30 - 11:30 Penjaskes    
+                                    <span class="sesi1<?=$jumsesi1;?>">07:30 - 08:30 IPS</span><br>
+                                    <span class="sesi2<?=$jumsesi2;?>">10:30 - 11:30 Penjaskes</span>    
                                     </p>
                                 </div>
                             </div>
@@ -271,14 +359,13 @@
                                 <div class="container text-center">
                                     <i class="fab fa-github-square"></i>
                                 </div>
-                                <div class="cardTitle">
+                                <div class="cardTitle hari<?=$sab;?>">
                                     Sabtu
                                 </div>
                                 
                                 <div class="card-body">
                                     <p class="card-text">
-                                    07:30 - 08:30 PPKN<br>
-                                    
+                                    <span class="sesi1<?=$sabsesi1;?>">07:30 - 08:30 PPKN</span>
                                     </p>
                                 </div>
                             </div>
