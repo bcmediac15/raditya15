@@ -1,8 +1,11 @@
 <?php
+    error_reporting(0);
     include_once("konfigurasi.php");
     include_once("raditya.php");
-    $esa = new raditya();
+    include_once("feedblog.php");
+    $esa = new feedblog();
     $feeds = $esa->ReadFeed();
+    $feedother = $esa->ReadFeedOther();
 ?><!doctype html>
 <html lang="en">
   <head>
@@ -115,6 +118,9 @@
                   <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link" href="#JadwalSekolah">Jadwal Sekolah</a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link" href="#InfoSekolah">InfoSekolah</a>
                 </li>
                 <li class="nav-item">
@@ -158,6 +164,128 @@
                 </div>
             </div>
         </section>
+    </a>
+    <a name="JadwalSekolah">
+        <section id="InfoSekolah" class="InfoSekolah">
+        <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <h3>Jadwal Sekolah</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container mb-5">
+                <div class="row mb-3">
+
+                    <div class="col-md-4 cardrss">
+                            <div class="card">
+                                <div class="container text-center">
+                                    <i class="fab fa-github-square"></i>
+                                </div>
+                            
+                                <div class="cardTitle">
+                                    Senin
+                                </div>
+                                
+                                <div class="card-body">
+                                    <p class="card-text">
+                                    07:30 - 08:30 Matematika<br>
+                                    10:30 - 11:30 Agama    
+                                    </p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-4 cardrss">
+                            <div class="card">
+                                <div class="container text-center">
+                                    <i class="fab fa-github-square"></i>
+                                </div>
+                                <div class="cardTitle">
+                                    Selasa
+                                </div>
+                                
+                                <div class="card-body">
+                                    <p class="card-text">
+                                    07:30 - 08:30 IPA<br>
+                                    10:30 - 11:30 Bahasa Bali    
+                                    </p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-4 cardrss">
+                            <div class="card">
+                                <div class="container text-center">
+                                    <i class="fab fa-github-square"></i>
+                                </div>
+                                <div class="cardTitle">
+                                    Rabu
+                                </div>
+                                
+                                <div class="card-body">
+                                    <p class="card-text">
+                                    07:30 - 08:30 Bahasa Indonesia<br>
+                                    10:30 - 11:30 TIK    
+                                    </p>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="col-md-4 cardrss">
+                            <div class="card">
+                                <div class="container text-center">
+                                    <i class="fab fa-github-square"></i>
+                                </div>
+                            
+                                <div class="cardTitle">
+                                    Kamis
+                                </div>
+                                
+                                <div class="card-body">
+                                    <p class="card-text">
+                                    07:30 - 08:30 Bahasa Inggris<br>
+                                    10:30 - 11:30 Seni Budaya    
+                                    </p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-4 cardrss">
+                            <div class="card">
+                                <div class="container text-center">
+                                    <i class="fab fa-github-square"></i>
+                                </div>
+                                <div class="cardTitle">
+                                    Jumat
+                                </div>
+                                
+                                <div class="card-body">
+                                    <p class="card-text">
+                                    07:30 - 08:30 IPS<br>
+                                    10:30 - 11:30 Penjaskes    
+                                    </p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-4 cardrss">
+                            <div class="card">
+                                <div class="container text-center">
+                                    <i class="fab fa-github-square"></i>
+                                </div>
+                                <div class="cardTitle">
+                                    Sabtu
+                                </div>
+                                
+                                <div class="card-body">
+                                    <p class="card-text">
+                                    07:30 - 08:30 PPKN<br>
+                                    
+                                    </p>
+                                </div>
+                            </div>
+                    </div>
+
+                </div>
+            </div>
     </a>
     <a name="InfoSekolah">
         <section id="InfoSekolah" class="InfoSekolah">
@@ -216,6 +344,25 @@
             </div>
         </section>
     </a>
+    
+    <a name="portfolio">
+        <section id="portofolio" class="portofolio">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <h3>Feed Blog Lain</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="container mb-5">
+                <div class="row mb-3">
+
+                <?=$feedother;?>
+
+                </div>
+            </div>
+        </section>
+    </a>
     <a name="contact">
         <section id="contact" class="contact">
             <div class="container mb-5">
@@ -268,6 +415,7 @@
                     <div class="col bg-dark text-white text-center">
                         Link:<br>
                         1. <a href='https://smpn2kutaselatan.sch.id/'>Sekolah</a>
+                        2. <a href='https://artha.web.id/'>Artha Blog</a>
                         <p>&copy;2020</p>
                     </div>
                 </div>
