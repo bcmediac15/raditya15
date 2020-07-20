@@ -82,7 +82,6 @@
             }
         break;    
     }
-    
 ?><!doctype html>
 <html lang="en">
   <head>
@@ -267,12 +266,12 @@
                 <div class="row mb-3">
 
                     <div class="col-md-4 cardrss">
-                            <div class="card harini">
+                            <div class="card<?=$sen;?>">
                                 <div class="container text-center">
                                     <i class="fab fa-github-square"></i>
                                 </div>
                             
-                                <div class="cardTitle hari<?=$sen;?>">
+                                <div class="cardTitle hari">
                                     Senin
                                 </div>
                                 
@@ -285,11 +284,11 @@
                             </div>
                     </div>
                     <div class="col-md-4 cardrss">
-                            <div class="card">
+                            <div class="card<?=$sen;?>">
                                 <div class="container text-center">
                                     <i class="fab fa-github-square"></i>
                                 </div>
-                                <div class="cardTitle hari<?=$sel;?>">
+                                <div class="cardTitle hari">
                                     Selasa
                                 </div>
                                 
@@ -302,11 +301,11 @@
                             </div>
                     </div>
                     <div class="col-md-4 cardrss">
-                            <div class="card">
+                            <div class="card<?=$rab;?>">
                                 <div class="container text-center">
                                     <i class="fab fa-github-square"></i>
                                 </div>
-                                <div class="cardTitle hari<?=$rab;?>">
+                                <div class="cardTitle hari">
                                     Rabu
                                 </div>
                                 
@@ -320,12 +319,12 @@
                     </div>
 
                     <div class="col-md-4 cardrss">
-                            <div class="card">
+                            <div class="card<?=$kam;?>">
                                 <div class="container text-center">
                                     <i class="fab fa-github-square"></i>
                                 </div>
                             
-                                <div class="cardTitle hari<?=$kam;?>">
+                                <div class="cardTitle hari">
                                     Kamis
                                 </div>
                                 
@@ -338,11 +337,11 @@
                             </div>
                     </div>
                     <div class="col-md-4 cardrss">
-                            <div class="card">
+                            <div class="card<?=$jum;?>">
                                 <div class="container text-center">
                                     <i class="fab fa-github-square"></i>
                                 </div>
-                                <div class="cardTitle hari<?=$jum;?>">
+                                <div class="cardTitle hari">
                                     Jumat
                                 </div>
                                 
@@ -355,11 +354,11 @@
                             </div>
                     </div>
                     <div class="col-md-4 cardrss">
-                            <div class="card">
+                            <div class="card<?=$sab;?>">
                                 <div class="container text-center">
                                     <i class="fab fa-github-square"></i>
                                 </div>
-                                <div class="cardTitle hari<?=$sab;?>">
+                                <div class="cardTitle hari">
                                     Sabtu
                                 </div>
                                 
