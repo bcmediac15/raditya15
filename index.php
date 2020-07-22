@@ -269,6 +269,7 @@
                             <div class="card<?=$sen;?>">
                                 <div class="container text-center">
                                     <i class="fab fa-github-square"></i>
+                                    <i class="fal fa-alarm-clock"></i>
                                 </div>
                             
                                 <div class="cardTitle hari">
@@ -284,7 +285,7 @@
                             </div>
                     </div>
                     <div class="col-md-4 cardrss">
-                            <div class="card<?=$sen;?>">
+                            <div class="card<?=$sel;?>">
                                 <div class="container text-center">
                                     <i class="fab fa-github-square"></i>
                                 </div>
