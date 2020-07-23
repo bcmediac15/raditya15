@@ -2,7 +2,7 @@
     class raditya{
         public $rssfeed;
         public $JamAktif;
-        
+
         public function __construct()
 	    {
             //$this->rssfeed = simplexml_load_file(FeedUrl);
@@ -47,7 +47,6 @@
                     $this->hrAktif["HARI"][$day][$JM] = " jamaktif";
                 }
             }
-            
             return $this->hrAktif;
         }
         public function hariaktif(){
