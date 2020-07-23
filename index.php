@@ -1,87 +1,14 @@
 <?php
-    error_reporting(0);
+    session_start();
+    //error_reporting(0);
     include_once("konfigurasi.php");
     include_once("raditya.php");
     include_once("feedblog.php");
+    
     $esa = new feedblog();
     $feeds = $esa->ReadFeed();
     $feedother = $esa->ReadFeedOther();
-    $mulai1 = date("Y-m-d");
-    $mulai1 .= " 07:30:00";
-    $akhir1 = date("Y-m-d");
-    $akhir1 .= " 08:30:00";
-    $start1 = strtotime($mulai1);
-    $end1 = strtotime($akhir1);
-    
-    $mulai2 = date("Y-m-d");
-    $mulai2 .= " 10:30:00";
-    $akhir2 = date("Y-m-d");
-    $akhir2 .= " 11:30:00";
-    $start2 = strtotime($mulai2);
-    $end2 = strtotime($akhir2);
-
-    $sen = "";
-    $sel = "";
-    $rab = "";
-    $kam = "";
-    $jum = "";
-    $sab = "";
-    $sesi1sen = "";
-    $sesi2sen = "";
-    $day = date('D');
-    switch($day){
-        case "Mon":
-            $sen = " harini";
-            if(time() >= $start1 && time() <= $end1){
-                $sensesi1 = " jamaktif";
-            }
-            if(time() >= $start2 && time() <= $end2){
-                $sensesi2 = " jamaktif";
-            }
-        break;
-        case "Tue":
-            $sel = " harini";
-            if(time() >= $start1 && time() <= $end1){
-                $selsesi1 = " jamaktif";
-            }
-            if(time() >= $start2 && time() <= $end2){
-                $selsesi2 = " jamaktif";
-            }
-        break;
-        case "Wed":
-            $rab = " harini";
-            if(time() >= $start1 && time() <= $end1){
-                $rabsesi1 = " jamaktif";
-            }
-            if(time() >= $start2 && time() <= $end2){
-                $rabsesi2 = " jamaktif";
-            }
-        break;
-        case "Thu":
-            $kam = " harini";
-            if(time() >= $start1 && time() <= $end1){
-                $kamsesi1 = " jamaktif";
-            }
-            if(time() >= $start2 && time() <= $end2){
-                $kamsesi2 = " jamaktif";
-            }
-        break;
-        case "Fri":
-            $jum = " harini";
-            if(time() >= $start1 && time() <= $end1){
-                $jumsesi1 = " jamaktif";
-            }
-            if(time() >= $start2 && time() <= $end2){
-                $jumsesi2 = " jamaktif";
-            }
-        break;
-        case "Sat":
-            $sab = " harini";
-            if(time() >= $start1 && time() <= $end1){
-                $sabsesi1 = " jamaktif";
-            }
-        break;    
-    }
+    $J1 = $esa->JamPelAktif();
 ?><!doctype html>
 <html lang="en">
   <head>
@@ -266,7 +193,7 @@
                 <div class="row mb-3">
 
                     <div class="col-md-4 cardrss">
-                            <div class="card<?=$sen;?>">
+                            <div class="card<?=$J1["HARI"]["Mon"]["tx"];?>">
                                 <div class="container text-center">
                                     <i class="fab fa-github-square"></i>
                                     <i class="fal fa-alarm-clock"></i>
@@ -278,14 +205,14 @@
                                 
                                 <div class="card-body">
                                     <p class="card-text">
-                                    <span class="sesi1<?=$sensesi1;?>">07:30 - 08:30 Matematika</span><br>
-                                    <span class="sesi2<?=$sensesi2;?>">10:30 - 11:30 Agama</span>
+                                    <span class="sesi1<?=$J1["HARI"]["Mon"]["SESI1"];?>">07:30 - 08:30 Matematika</span><br>
+                                    <span class="sesi2<?=$J1["HARI"]["Mon"]["SESI2"];?>">10:30 - 11:30 Agama</span>
                                     </p>
                                 </div>
                             </div>
                     </div>
                     <div class="col-md-4 cardrss">
-                            <div class="card<?=$sel;?>">
+                            <div class="card<?=$J1["HARI"]["Tue"]["tx"];?>">
                                 <div class="container text-center">
                                     <i class="fab fa-github-square"></i>
                                 </div>
@@ -295,14 +222,14 @@
                                 
                                 <div class="card-body">
                                     <p class="card-text">
-                                    <span class="sesi1<?=$selsesi1;?>">07:30 - 08:30 IPA</span><br>
-                                    <span class="sesi2<?=$selsesi2;?>">10:30 - 11:30 Bahasa Bali</span>    
+                                    <span class="sesi1<?=$J1["HARI"]["Tue"]["SESI1"];?>">07:30 - 08:30 IPA</span><br>
+                                    <span class="sesi2<?=$J1["HARI"]["Tue"]["SESI2"];?>">10:30 - 11:30 Bahasa Bali</span>    
                                     </p>
                                 </div>
                             </div>
                     </div>
                     <div class="col-md-4 cardrss">
-                            <div class="card<?=$rab;?>">
+                            <div class="card<?=$J1["HARI"]["Wed"]["tx"];?>">
                                 <div class="container text-center">
                                     <i class="fab fa-github-square"></i>
                                 </div>
@@ -312,15 +239,15 @@
                                 
                                 <div class="card-body">
                                     <p class="card-text">
-                                    <span class="sesi1<?=$rabsesi1;?>">07:30 - 08:30 Bahasa Indonesia</span><br>
-                                    <span class="sesi2<?=$rabsesi2;?>">10:30 - 11:30 TIK</span>  
+                                    <span class="sesi1<?=$J1["HARI"]["Wed"]["SESI1"];?>">07:30 - 08:30 Bahasa Indonesia</span><br>
+                                    <span class="sesi2<?=$J1["HARI"]["Wed"]["SESI2"];?>">10:30 - 11:30 TIK</span>  
                                     </p>
                                 </div>
                             </div>
                     </div>
 
                     <div class="col-md-4 cardrss">
-                            <div class="card<?=$kam;?>">
+                            <div class="card<?=$J1["HARI"]["Thu"]["tx"];?>">
                                 <div class="container text-center">
                                     <i class="fab fa-github-square"></i>
                                 </div>
@@ -331,14 +258,14 @@
                                 
                                 <div class="card-body">
                                     <p class="card-text">
-                                    <span class="sesi1<?=$kamsesi1;?>">07:30 - 08:30 Bahasa Inggris</span><br>
-                                    <span class="sesi2<?=$kamsesi2;?>">10:30 - 11:30 Seni Budaya</span>    
+                                    <span class="sesi1<?=$J1["HARI"]["Thu"]["SESI1"];?>">07:30 - 08:30 Bahasa Inggris</span><br>
+                                    <span class="sesi2<?=$J1["HARI"]["Thu"]["SESI2"];?>">10:30 - 11:30 Seni Budaya</span>    
                                     </p>
                                 </div>
                             </div>
                     </div>
                     <div class="col-md-4 cardrss">
-                            <div class="card<?=$jum;?>">
+                            <div class="card<?=$J1["HARI"]["Fri"]["tx"];?>">
                                 <div class="container text-center">
                                     <i class="fab fa-github-square"></i>
                                 </div>
@@ -348,14 +275,14 @@
                                 
                                 <div class="card-body">
                                     <p class="card-text">
-                                    <span class="sesi1<?=$jumsesi1;?>">07:30 - 08:30 IPS</span><br>
-                                    <span class="sesi2<?=$jumsesi2;?>">10:30 - 11:30 Penjaskes</span>    
+                                    <span class="sesi1<?=$J1["HARI"]["Fri"]["SESI1"];?>">07:30 - 08:30 IPS</span><br>
+                                    <span class="sesi2<?=$J1["HARI"]["Fri"]["SESI2"];?>">10:30 - 11:30 Penjaskes</span>    
                                     </p>
                                 </div>
                             </div>
                     </div>
                     <div class="col-md-4 cardrss">
-                            <div class="card<?=$sab;?>">
+                            <div class="card<?=$J1["HARI"]["Sat"]["tx"];?>">
                                 <div class="container text-center">
                                     <i class="fab fa-github-square"></i>
                                 </div>
@@ -365,7 +292,7 @@
                                 
                                 <div class="card-body">
                                     <p class="card-text">
-                                    <span class="sesi1<?=$sabsesi1;?>">07:30 - 08:30 PPKN</span>
+                                    <span class="sesi1<?=$J1["HARI"]["Sat"]["SESI1"];?>">07:30 - 08:30 PPKN</span>
                                     </p>
                                 </div>
                             </div>
