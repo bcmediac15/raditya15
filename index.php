@@ -138,11 +138,11 @@
                   <a class="nav-link" href="#InfoSekolah">InfoSekolah</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#portfolio">Project</a>
+                  <a class="nav-link" href="#MaPel">Mapel</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                  </li>
+                  <a class="nav-link" href="#portfolio">Project</a>
+                </li>
               </ul>
             </div>
           </nav>
@@ -205,7 +205,7 @@
                                 
                                 <div class="card-body">
                                     <p class="card-text">
-                                    <span class="sesi1<?=$J1["HARI"]["Mon"]["SESI1"];?>">07:30 - 08:30 Matematika</span><br>
+                                    <span class="sesi1<?=$J1["HARI"]["Mon"]["SESI1"];?>">07:30 - 08:30 Matematika Materi</span><br>
                                     <span class="sesi2<?=$J1["HARI"]["Mon"]["SESI2"];?>">10:30 - 11:30 Agama</span>
                                     </p>
                                 </div>
@@ -301,6 +301,214 @@
                 </div>
             </div>
     </a>
+    <a name="MaPel">
+        <section id="MaPel" class="MaPel">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <h3>Materi Pembelajaran</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+
+            <div class="col-md-4 cardrss">
+                <div class="card<?=$J1["HARI"]["Mon"]["tx"];?>">
+                    <div class="container text-center">
+                        <i class="fab fa-github-square"></i>
+                        <i class="fal fa-alarm-clock"></i>
+                    </div>
+                    <div class="cardTitle hari">
+                        Mata Pelajaran Agama Kelas VII
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <span><a href='https://ptov.ga/BCMuux5v' target='_mapelAGAMA'>Agama Hindu</a></span><br>
+                            <span><a href='https://ptov.ga/BCMtuu4k' target='_mapelAGAMA'>Agama Islam</a></span><br>
+                            <span><a href='https://ptov.ga/BCMekuch' target='_mapelAGAMA'>Agama Kristen</a></span><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cardrss">
+                <div class="card<?=$J1["HARI"]["Mon"]["tx"];?>">
+                    <div class="container text-center">
+                        <i class="fab fa-github-square"></i>
+                        <i class="fal fa-alarm-clock"></i>
+                    </div>
+                    <div class="cardTitle hari">
+                    Mata Pelajaran PPKN Kelas VII
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <span><a href='https://ptov.ga/BCMr2swm' target='_mapelPPKN'>PPKN</a></span><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cardrss">
+                <div class="card<?=$J1["HARI"]["Mon"]["tx"];?>">
+                    <div class="container text-center">
+                        <i class="fab fa-github-square"></i>
+                        <i class="fal fa-alarm-clock"></i>
+                    </div>
+                    <div class="cardTitle hari">
+                    Mata Pelajaran Matematika Kelas VII
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <span><a href='https://ptov.ga/BCMo3ix2' target='_mapelMatematika'>Matematika</a></span><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cardrss">
+                <div class="card<?=$J1["HARI"]["Mon"]["tx"];?>">
+                    <div class="container text-center">
+                        <i class="fab fa-github-square"></i>
+                        <i class="fal fa-alarm-clock"></i>
+                    </div>
+                    <div class="cardTitle hari">
+                    IPA Kelas VII
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <span><a href='https://ptov.ga/BCMbqnwl' target='_mapelIPA'>Ilmu Pengetahuan Alam</a></span><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cardrss">
+                <div class="card<?=$J1["HARI"]["Mon"]["tx"];?>">
+                    <div class="container text-center">
+                        <i class="fab fa-github-square"></i>
+                        <i class="fal fa-alarm-clock"></i>
+                    </div>
+                    <div class="cardTitle hari">
+                    IPS Kelas VII
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <span><a href='https://ptov.ga/BCM3iujj' target='_mapelIPS'>Ilmu Pengetahuan Sosial</a></span><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cardrss">
+                <div class="card<?=$J1["HARI"]["Mon"]["tx"];?>">
+                    <div class="container text-center">
+                        <i class="fab fa-github-square"></i>
+                        <i class="fal fa-alarm-clock"></i>
+                    </div>
+                    <div class="cardTitle hari">
+                    Bahasa Indonesia Kelas VII
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <span><a href='https://ptov.ga/BCMt7s65' target='_mapelBIndo'>Bahasa Indonesia</a></span><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cardrss">
+                <div class="card<?=$J1["HARI"]["Mon"]["tx"];?>">
+                    <div class="container text-center">
+                        <i class="fab fa-github-square"></i>
+                        <i class="fal fa-alarm-clock"></i>
+                    </div>
+                    <div class="cardTitle hari">
+                    Bahasa Inggris Kelas VII
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <span><a href='https://ptov.ga/BCMwp5t4' target='_mapelBIng'>Bahasa Inggris</a></span><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cardrss">
+                <div class="card<?=$J1["HARI"]["Mon"]["tx"];?>">
+                    <div class="container text-center">
+                        <i class="fab fa-github-square"></i>
+                        <i class="fal fa-alarm-clock"></i>
+                    </div>
+                    <div class="cardTitle hari">
+                    Bahasa Bali Kelas VII
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <span><a href='https://ptov.ga/BCMbnjmx' target='_mapelBBali'>Bahasa Bali</a></span><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cardrss">
+                <div class="card<?=$J1["HARI"]["Mon"]["tx"];?>">
+                    <div class="container text-center">
+                        <i class="fab fa-github-square"></i>
+                        <i class="fal fa-alarm-clock"></i>
+                    </div>
+                    <div class="cardTitle hari">
+                    TIK Kelas VII
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <span><a href='https://ptov.ga/BCMuol4j' target='_mapelTIK'>Teknologi Informasi dan Komunikasi</a></span><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cardrss">
+                <div class="card<?=$J1["HARI"]["Mon"]["tx"];?>">
+                    <div class="container text-center">
+                        <i class="fab fa-github-square"></i>
+                        <i class="fal fa-alarm-clock"></i>
+                    </div>
+                    <div class="cardTitle hari">
+                    Penjas Kelas VII
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <span><a href='https://ptov.ga/BCMuol4j' target='_mapelTIK'>Pendidikan Jesmani dan Kesehatan</a></span><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cardrss">
+                <div class="card<?=$J1["HARI"]["Mon"]["tx"];?>">
+                    <div class="container text-center">
+                        <i class="fab fa-github-square"></i>
+                        <i class="fal fa-alarm-clock"></i>
+                    </div>
+                    <div class="cardTitle hari">
+                    Seni Kelas VII
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <span><a href='https://ptov.ga/BCMu7pdb' target='_mapelseni'>Senibudaya</a></span><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cardrss">
+                <div class="card<?=$J1["HARI"]["Mon"]["tx"];?>">
+                    <div class="container text-center">
+                        <i class="fab fa-github-square"></i>
+                        <i class="fal fa-alarm-clock"></i>
+                    </div>
+                    <div class="cardTitle hari">
+                    Bimbingan Konseling Kelas VII
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <span><a href='https://ptov.ga/BCMu7pdb' target='_mapelBK'>Bimbingan Konseling</a></span><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </a>
     <a name="InfoSekolah">
         <section id="InfoSekolah" class="InfoSekolah">
             <div class="container text-center">
@@ -377,51 +585,6 @@
             </div>
         </section>
     </a>
-    <a name="contact">
-        <section id="contact" class="contact">
-            <div class="container mb-5">
-                <div class="row pt-4 mb-4">
-                    <div class="col text-center">
-                        <h3>Contact Us</h3>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-4">
-                        <div class="card">
-                            <div class="card-body text-white bg-primary mb-3 text-center">
-                              <p class="card-text">Informasi Kontak</p>
-                            </div>
-                        </div>
-                        <ul class="list-group">
-                            <li class="list-group-item">Alamat</li>
-                            <li class="list-group-item">Bali Kencana Resort I Blok C15</li>
-                            <li class="list-group-item">Angas Sari, Ungasan</li>
-                            <li class="list-group-item">Kuta Selatan Badung Bali</li>
-                          </ul>
-                    </div>
-                    <div class="col-lg-6">
-                        <form>
-                            <div class="form-group">
-                              <label for="email">Email address</label>
-                              <input type="email" class="form-control" id="email">
-                            </div>
-                            <div class="form-group">
-                              <label for="nama">Nama</label>
-                              <input type="text" class="form-control" id="nama">
-                            </div>
-                            <div class="form-group">
-                              <label for="exampleFormControlTextarea1">Tulis Pesan</label>
-                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <button type="button" class="btn btn-primary">Send</button>
-                            </div>
-                          </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </a>
     <footer>
         <section id="footer" class="footer">
             <div class="container">
@@ -441,14 +604,13 @@
             <ul id="menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#JadwalSekolah">Jadwal</a></li>
+                <li><a href="#InfoSekolah">InfoSekolah</a></li>
+                <li><a href="#mapel">Mapel</a></li>
                 <li><a href="#portofolio">Portofolio</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
         </section>
     </navbottom>
-
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
