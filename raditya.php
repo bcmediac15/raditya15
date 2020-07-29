@@ -5,7 +5,7 @@
 
         public function __construct()
 	    {
-            //$this->rssfeed = simplexml_load_file(FeedUrl);
+
 	    }
         public function __destruct()
         {
