@@ -19,93 +19,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
 
     <title>Info Sekolah SMPN.2 Kuta Selatan - Keperluan Pribadi</title>
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        .navbtton{
-            display: none;
-        }
-        .rouded-circle{
-            border-radius: 50%;
-        }
-        .footer{
-            background-color: #343a40 !important;
-            margin-top: 30px;
-            padding-top: 10px;
-            font-size: 10px;
-        }
-        .text-justify {
-            text-align: justify !important;
-        }
-        .fab{
-            font-size: 35px;
-        }
-        .cardrss{
-            padding-bottom: 40px
-        }
-        .card{
-            font-size: 14px;
-        }
-        .card-text{
-            min-height: 120px;
-        }
-        .cardTitle{
-            font-weight: bold;
-        }
-        .cardfoot{
-            text-align: right;
-            padding: 30px;
-            
-        }
-        .cardTitle a{
-            text-decoration: none;
-            color: black;
-        }
-        .cardfoot a:hover{
-            text-decoration: none;
-            color: red;
-        }
-        .hari{
-            text-align: center !important;
-        }
-        .harini {
-            border-color: bisque;
-            background-color: antiquewhite;
-            font-weight: bold;
-        }
-        .jamaktif{
-            color: red;
-        }
-        @media screen and (max-width: 600px) {
-            .footer{
-                visibility: hidden;
-            }
-            .navbtton{
-                margin-top: 30px;
-                display: block;
-                position: fixed;
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                background-color:#343a40 !important;
-                padding-top: 10px;
-            }
-            .navbtton a{
-                color: white;
-                padding-right: 10px;
-            }
-            .navbtton a:hover{
-                font-weight: bold;
-                font-style: none;
-            }
-            ul#menu li {
-                display:inline;
-                font-style: none;
-            }
-        }
+        
     </style>
   </head>
   <body>
